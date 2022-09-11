@@ -24,6 +24,7 @@
     "@material/button": "^14.0.0",
     "@material/dom": "^14.0.0",
     "@material/list": "^14.0.0",
+    "cors": "^2.8.5",
     "material-components-web": "^14.0.0",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
