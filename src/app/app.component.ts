@@ -15,10 +15,12 @@ export class AppComponent implements OnInit {
   layout: string;
 
   constructor(
-    private responsive: BreakpointObserver
+    private responsive: BreakpointObserver,
+    private router: Router
   ) {}
 
   async ngOnInit() {
+    this.setUpAnalytics();
     this.responsive.observe('(min-width: 550px)')
       .subscribe(result => {
         if (result.matches) {
@@ -114,7 +116,14 @@ export class AppComponent implements OnInit {
   }
 
   setUpAnalytics() {
-    //TODO
+    this.router.events.pipe(filter(event => event instanceof NavigationEnd))
+        .subscribe((event: NavigationEnd) => {
+            gtag('config', 'G-R28CRD02MV',
+                {
+                    page_path: event.urlAfterRedirects
+                }
+            );
+        });
   }
 
 }
