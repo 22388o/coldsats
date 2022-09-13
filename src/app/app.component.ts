@@ -37,13 +37,13 @@ export class AppComponent implements OnInit {
         title: 'Node',
         cards: [{
           title: 'Amboss',
-          description: 'I run Cold Sats bare metal (RaspiBolt) on an ASRock x300, Ryzen 7, 2x2GB NVMe + 32GB ram. I built this little beast of a machine to last.',
+          description: 'I run Cold Sats bare metal (RaspiBolt) on an ASRock x300, Ryzen 7, 2x2TB NVMe RAID 1 + 32GB ram. I built this little beast of a machine to last.',
           image: 'assets/images/amboss.svg',
           url: 'https://amboss.space/c/coldsats'
         },
         {
           title: 'Terminal Web',
-          description: 'Cold Sats is currently ranked top 50 Terminal Web. Success to me would be falling out of the top 1,000 in the next decade.',
+          description: 'Cold Sats is currently ranked top 50 in Terminal Web. Success to me would be falling out of the top 1,000 in the next decade.',
           image: 'assets/images/terminal-web.svg',
           url: 'https://terminal.lightning.engineering/#/020a3dce2dab038955eb435a8342e4fe897304015314485d3738d5f41eccb47859'
         }]
@@ -54,13 +54,13 @@ export class AppComponent implements OnInit {
           title: 'ln-charts',
           description: 'ln-charts parses bos accounting reports into various charts for your Lightning Node. Free, private and open source.',
           image: 'assets/images/ln-charts.svg',
-          url: 'https://cold-sats.github.io/ln-charts/'
+          url: 'https://github.com/cold-sats/ln-charts'
         },
         {
           title: 'coldsats.io',
           description: 'I built this website as a home for my Bitcoin related projects and articles. Check back in the future to see where I go with this.',
           image: 'assets/images/cold-sats.svg',
-          url: 'https://coldsats.io'
+          url: 'https://github.com/cold-sats/coldsats'
         }]
       },
       {
@@ -68,13 +68,13 @@ export class AppComponent implements OnInit {
         cards: [
           {
             title: this.layout == 'mobile' ? 'Bootstrap a Node' : 'How to Bootstrap a Profitable Lightning Node',
-            description: this.layout == 'mobile' ? 'How to Bootstrap a Profitable Lightning Node - Learnings from a top 100 node to help illuminate your path' : 'Learnings from a top 100 node to help illuminate your path',
+            description: this.layout == 'mobile' ? 'How to Bootstrap a Profitable Lightning Node: learnings from a top 100 node to help illuminate your path.' : 'Learnings from a top 100 node to help illuminate your path.',
             image: 'assets/images/bootstrap.svg',
             url: 'https://medium.com/@cold_sats/how-to-bootstrap-a-profitable-lightning-node-8de72beac59c'
           },
           {
             title: this.layout == 'mobile' ? 'Migrate LND to RaspiBolt' : 'How to Migrate LND From myNode or Umbrel to RaspiBolt',
-            description: this.layout == 'mobile' ? 'How to Migrate LND From myNode or Umbrel to RaspiBolt - A step-by-step list of commands to level your node up' : 'A step-by-step list of commands to level your node up',
+            description: this.layout == 'mobile' ? 'How to Migrate LND From myNode or Umbrel to RaspiBolt: a step-by-step list of commands to level your node up.' : 'A step-by-step list of commands to level your node up.',
             image: 'assets/images/how-to-migrate.svg',
             url: 'https://medium.com/@cold_sats/how-to-migrate-lnd-from-mynode-to-raspibolt-ubuntu-server-e6089a92eae7'
           }
@@ -97,7 +97,7 @@ export class AppComponent implements OnInit {
           },
           {
             title: this.layout == 'mobile' ? 'Node Migration Guide' : 'Lightning Node Migration Guide',
-            description: 'I migrated my Lightning node from a pi4 to an ASRock x300. Here\’s a high level of the build and migration (commands in the medium article).',
+            description: 'I migrated my Lightning node from a pi4 to an ASRock x300. Here\’s a high level of the build and migration (commands are in the medium article).',
             image: 'assets/images/migration.svg',
             url: 'https://twitter.com/cold_sats/status/1495126848631496704?s=20&t=dP8h_ISgLbtQlwFf1OJALw'
           }
